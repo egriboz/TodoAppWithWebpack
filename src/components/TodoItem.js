@@ -10,7 +10,7 @@ class TodoItem extends React.Component {
   }
   render() {
     return (
-      <li>
+      <li className="list-group-item d-flex justify-content-between align-items-center">
         {this.props.item}
         <button
           onClick={this.deleteItem}

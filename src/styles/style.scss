@@ -1,0 +1,10 @@
+$color : black;
+body {
+  color: $color;
+}
+ul {
+  list-style-type: none;
+  li {
+    margin: 10px;
+  }
+}

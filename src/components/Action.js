@@ -23,16 +23,19 @@ class Action extends React.Component {
     return (
       <div>
         {this.state.error && <p>{this.state.error}</p>}
-        <form onSubmit={this.onFormSubmit} className="flex">
-          <input
-            type="text"
-            name="txtItem"
-          />
-          <button
-            type="submit"            
-          >
-            Add Item
-          </button>
+        <form onSubmit={this.onFormSubmit} className="input-group">
+          <input type="text" name="txtItem" 
+          class="form-control" 
+          placeholder="Item name" 
+          aria-label="Item name" 
+          aria-describedby="basic-addon2" />
+          <div className="input-group-append">
+            <button
+              type="submit" className="btn btn-outline-secondary"        
+            >
+              Add Item
+            </button>
+          </div>
         </form>
       </div>
     );

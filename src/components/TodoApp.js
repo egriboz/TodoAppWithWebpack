@@ -71,7 +71,7 @@ class TodoApp extends React.Component {
       description: "Passages available"
     };
     return (
-      <div>
+      <div className="container">
         <Header title={app.title} description={app.description} />
         <TodoList
           items={this.state.items}
