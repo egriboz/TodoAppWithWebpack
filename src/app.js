@@ -84,9 +84,9 @@ class TodoApp extends React.Component {
 class Header extends React.Component {
   render() {
     return (
-      <div className="bg-purple-600 p-2 text-white text-center">
-        <h1 className="text-2xl font-bold">{this.props.title}</h1>
-        <div className="text-md font-normal">{this.props.description}</div>
+      <div>
+        <h1>{this.props.title}</h1>
+        <div>{this.props.description}</div>
       </div>
     );
   }
@@ -96,7 +96,7 @@ class TodoList extends React.Component {
   render() {
     return (
       <div>
-        <ul className="divide-y divide-light-blue-400 m-5">
+        <ul>
           {this.props.items.map((item, index) => (
             <TodoItem
               deleteItem={this.props.deleteItem}
@@ -130,11 +130,10 @@ class TodoItem extends React.Component {
   }
   render() {
     return (
-      <li className="flex items-center py-2">
+      <li>
         {this.props.item}
         <button
           onClick={this.deleteItem}
-          className="flex ml-auto p-2 font-semibold text-white bg-indigo-500"
         >
           x
         </button>
@@ -170,11 +169,9 @@ class Action extends React.Component {
           <input
             type="text"
             name="txtItem"
-            className="focus:outline-none focus:border-indigo-400 flex-grow border-4 border-indigo-500"
           />
           <button
-            type="submit"
-            className="w-32 py-1 font-semibold text-white bg-indigo-500"
+            type="submit"            
           >
             Add Item
           </button>
