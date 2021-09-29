@@ -25,7 +25,7 @@ class Action extends React.Component {
         {this.state.error && <p>{this.state.error}</p>}
         <form onSubmit={this.onFormSubmit} className="input-group">
           <input type="text" name="txtItem" 
-          class="form-control" 
+          className="form-control" 
           placeholder="Item name" 
           aria-label="Item name" 
           aria-describedby="basic-addon2" />
