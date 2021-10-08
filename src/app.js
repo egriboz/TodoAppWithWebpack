@@ -5,4 +5,4 @@ import TodoApp from './components/TodoApp';
 import './styles/app.scss'
 
 
-ReactDOM.render(<TodoApp />, document.getElementById("app"));
+ReactDOM.render(<TodoApp />, document.getElementById("root"));
